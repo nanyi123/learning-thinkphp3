@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>安徽省农产品质量安全追溯平台</title>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<css href="__PUBLIC__/easyUI/themes/default/easyui.css"/>
+<css href="__PUBLIC__/easyUI/themes/icon.css"/>
+<css href="__PUBLIC__/css/login.css"/>
+<js href="__PUBLIC__/easyUI/jquery.min.js"/>
+<js href="__PUBLIC__/easyUI/jquery.easyui.min.js"/>
+<js href="__PUBLIC__/easyUI/locale/easyui-lang-zh_CN.js"/>
+<style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: "Microsoft Yahei";
+            background: url('__PUBLIC__/images/login_bg.jpg') #000 no-repeat center center;
+            overflow: hidden;
+            position: relative;
+            background-size: cover;
+            min-width: 1080px;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        table tr {
+            margin-top: 30px;
+        }
+        
+        #p {
+            width: 340px;
+            height: 240px;
+            padding: 30px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            margin-top: -120px;
+            /* margin-left: -200px; */
+            /* background-color: rgba(255, 255, 255, 0.2); */
+        	background-color:rgba(97, 147, 32,0.7);
+            border-radius: 5px;
+            -ms-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            -moz-border: 1px solid rgba(255, 255, 255, 0.5);
+            -ms-border: 1px solid rgba(255, 255, 255, 0.5);
+            -webkit-border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .login_txt {
+            text-align: center;
+            font-size: 35px;
+            color: #fff;
+            text-shadow: 2px 2px 2px #555555;
+            -moz-text-shadow: 2px 2px 2px #555555;
+            -ms-text-shadow: 2px 2px 2px #555555;
+            -webkit-text-shadow: 2px 2px 2px #555555;
+            cursor: default;
+        }
+        
+        .login_txt td {
+            width: 340px;
+        }
+        
+        .user,
+        .pw{
+            width: 100%;
+            height: 35px;
+            margin: 10px 0;
+            border-radius: 4px;
+            -ms-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            outline: none;
+            padding: 5px;
+            box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 1px solid rgba(0, 100, 255, 0.3);
+            -ms-border: 1px solid rgba(0, 100, 255, 0.3);
+            -moz-border: 1px solid rgba(0, 100, 255, 0.3);
+            -webkit-border: 1px solid rgba(0, 100, 255, 0.3);
+            background-color: rgba(255, 255, 255, 1);
+            color: #000;
+        }
+        
+        .footer {
+            /* background-color: rgba(0, 0, 0, 0.4); */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            cursor: default;
+        }
+        
+        .footer a {
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+        .footer:hover a
+        {
+            color: #0cff00;
+        }
+        .login_btn a {
+            display: inline-block;
+            width: 100%;
+            height: 45px;
+        	background-color:#6D943A;
+            color: #fff;
+            line-height: 45px;
+            text-align: center;
+            margin-top: 15px;
+            border-radius: 4px;
+            -ms-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            text-shadow: 2px 2px 2px #555555;
+            -moz-text-shadow: 2px 2px 2px #555555;
+            -ms-text-shadow: 2px 2px 2px #555555;
+            -webkit-text-shadow: 2px 2px 2px #555555;
+            border: 1px solid rgba(0, 30, 96, 0.12);
+            -moz-border: 1px solid rgba(0, 30, 96, 0.12);
+            -ms-border: 1px solid rgba(0, 30, 96, 0.12);
+            -webkit-border: 1px solid rgba(0, 30, 96, 0.12);
+            transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+        
+        .login_btn a:hover,
+        .login_btn a:focus {
+        	background-color:#318409;
+        }
+        
+        .img_center {
+            width: 100%;
+            height: auto;
+            text-align: left;
+            position: absolute;
+            top: 18%;
+        	left:5%;
+            margin-top: -30px;
+            margin-bottom: 20px;
+        	
+        	/* font-size:40px;
+        	font-weight:1000;
+        	color:white; */
+        }
+        .img_center img {
+	        width:900px;
+        	height:auto;
+        }
+        .register{
+			text-align:right;
+        }
+        .register input {
+			border-radius:5px;
+        }
+        .aboutUs {
+			text-align:right; 
+        	margin-bottom:10px;
+        	height:200px;
+        	position:absolute;
+        	top:25px;
+        	right:20px;
+        	float:left;
+        }
+        .aboutUs img{
+			height:45px;
+        	width:100px;
+        }
+        .introduce  {
+        	/* background-color: rgba(0, 0, 0, 0.4); */
+        	padding:5px; 
+        	color:#fff;
+        	position:absolute;
+			bottom:70px;
+        	right:10px;
+        	display:none;
+        	z-index:100001;
+        }
+        .font_style{
+			color:white;
+        	text-shadow:1px 1px 1px black;
+        	font-weight:bold;
+        }
+        .button_style{
+        	background-color:#58A027;
+			color:white;
+        	text-shadow:1px 1px 1px black;
+        	border:1px white solid;
+        	cursor:pointer;
+        }
+        .button_style:hover{
+	       background-color:#318409;
+        }
+    </style>
+</head>
+
+<body>
+     <div class="img_center" >
+<!--        <img class="login_img" src="__PUBLIC__/images/login_jz.png" /> -->
+        <img class="login_img" src="" id="dtimg">  
+       
+    </div>
+    <div id="p" title="登录">
+        <input type="hidden" id="checkStatus" value="{$userInfo.checkbox}" />
+        <form id="fm" method="post">
+            <input type="hidden" name="id"></input>
+            <input type="hidden" id="role" name="role"></input>
+            <table style="width:100%">
+                <tr>
+                <td class="font_style">用户类型：</td>
+                    <td colspan="3" >
+                        <!-- <select prompt="请选择用户类型" class="easyui-combobox" id="cc" name="dept" style="width:250px; height:35px;" data-options="editable:false">
+						    <option value="0" disabled selected style="display=none"></option> 
+						    <option value="8">生产基地</option>
+						    <option value="10">政府监管部门</option>
+						    <option value="11">检测单位</option>						  						   
+						    <option value="1">系统管理员</option>
+						    <option value="12">蔬菜生产基地</option>
+						</select> -->
+						<input class="combobox" id="cc" name="userType" style="width:250px; height:33px;" data-options="editable:false"/>
+						
+                    </td>
+                </tr>
+                <tr>
+                <td class="font_style">登&nbsp;&nbsp;录&nbsp;&nbsp;名：</td>
+                    <td colspan="3">
+                        <input class="user" placeholder="账户" type="text" name="user" value="{$userInfo.user}"></input>
+                    </td>
+                </tr>
+                <tr>
+                <td class="font_style">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+                    <td colspan="3">
+                        <input class="pw" placeholder="密码" type="password" name="password" value="{$userInfo.password}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="text-align:left;font-size:14px;color:#fff;" class="font_style">
+                        记住密码：
+                        <input type="checkbox" name="checkbox" id="checkbox" />
+                    </td>
+                    <td  class="register">
+                    <input type="button" value="注册新用户" class="button_style" onclick="register()" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="login_btn">
+                        <a href="#" iconCls="icon-ok" onclick="login()">登&nbsp;&nbsp;&nbsp;录</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="introduce" class="introduce">
+    	<p>研发人员：张友华、花日茂、孟浩</p>
+    	<p>赵超越、祁南南、张丹丹、周乐乐、孙航</p>
+    </div>
+    <div class="footer">
+        <p style="margin-top:20px;">版权所有&copy;：安徽农业大学、安徽省农业生态环保与质量安全产业技术体系</p>
+        <p>技术支持：<a href="http://aie.ahau.edu.cn/home/" title="点击了解AIE">安徽农业大学农业信息工程实验室</a>| 联系地址：安徽省合肥市长江西路130号
+        </p>
+        <div class="aboutUs">
+            <img id="aboutUs" class="team" src="__PUBLIC__/images/team.png" alt="研发人员"/> 
+        </div>
+    </div>
+    <script type="text/javascript">
+    if($('#checkStatus').val()=="on"){
+    	$('#checkbox').attr("checked","checked");
+    }
+    function login(){
+    	
+    	$('#fm').form('submit',{
+    		url:'__ROOT__/index.php/Index/login?projectBh='+a.role,
+    		onSubmit: function(){
+    			if($('#fm [name="user"]').val()=="")
+    			{
+    				alert("用户名不能为空！");
+    				return false;
+    			}
+    			
+    			if($('#fm [name="password"]').val()=="")
+    			{
+    				alert("用密码不能为空！");
+    				return false;
+    			}
+    		},
+    		success: function(myString){
+    			
+    			var data=eval ("(" + myString + ")");   //解析json对象，，，，json格式    {"firstName":"Brett"}  
+    			
+    			if (data.result=="success"){
+    				window.location.href="__ROOT__/index.php/Index/host/";
+    			}
+    			else if(data.result=="noregister"){
+    				alert('您的账号未通过审核');return false;
+    			}
+    			else{
+    				alert('用户名或密码错误！');return false;
+    			}
+    		}
+    	});
+    	
+    }
+   
+  //enter触发login事件
+    document.onkeydown=function(event){
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if(e && e.keyCode==13){ // enter 键
+        	login(); //要做的事情
+       }
+   };
+   window.onload=function(){
+   	var obj1 = document.getElementById("aboutUs");
+       var obj2 = document.getElementById("introduce");
+       obj1.onmouseover=function(){
+       	obj2.style.display="inline-block";
+       }
+       obj1.onmouseout=function(){
+       	obj2.style.display="none";
+       }
+       
+       //获得用户类型
+   	$('#cc').combobox({
+   	url:'__ROOT__/index.php/Index/getRole?projectBh='+a.role,
+   	valueField:'id',
+   	textField:'role'
+   	});
+       
+       
+    if(a.role=="p_01"){
+      	 $('input[name="userType"]').val("生产企业");
+        $('#dtimg').attr('src','__PUBLIC__/images/chaye.png');
+        
+      }else if(a.role=="p_02"){
+    	  
+      	$('input[name="userType"]').val("蔬菜生产企业");
+           $('#dtimg').attr('src','__PUBLIC__/images/shucai.png')
+    } else{
+        $('#dtimg').attr('src','__PUBLIC__/images/login_jz.png');
+    } 
+    
+       
+    }
+   //前台传参
+    //获取？后传参
+    function GetRequest() {   
+    	   var url = location.search; //获取url中"?"符后的字串   
+    	   var theRequest = new Object();   
+    	   if (url.indexOf("?") != -1) {   
+    	      var str = url.substr(1);   
+    	      strs = str.split("&");   
+    	      for(var i = 0; i < strs.length; i ++) {   
+    	         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);   
+    	      }   
+    	   }   
+    	   return theRequest;   
+    	}  
+    var a=GetRequest('role');
+    $("#role").val(a.role);
+    
+  /*  if(a.role=="p_01"){
+    	$("#cc option[value='8']").attr("selected", "selected");
+    }else if(a.role=="p_02"){
+   	    $("#cc option[value='12']").attr("selected", "selected");
+  } */
+   /*  else{
+    	$("#cc").empty();   	
+    	$("#cc").append("<option value='0' disabled selected style='display=none'></option>"); 
+    	$("#cc").append("<option value='12' style='display:none'></option>"); 
+    	$("#cc").append("<option value='8'>生产基地</option>");  //添加一项option
+    	$("#cc").append("<option value='12'>蔬菜生产基地</option>");  
+    	$("#cc").append("<option value='10'>监管部门</option>");  //添加一项option
+    	$("#cc").append("<option value='11'>检测单位</option>");  //添加一项option
+    	$("#cc").append("<option value='1'>系统管理员</option>");  //添加一项option 
+    }  */
+    
+
+     
+   
+    
+    //注册用户
+    function register() {
+    	window.location.href="__ROOT__/index.php/Index/registerPage?projectBh="+a.role;
+    }
+    
+
+    </script>
+   
+</body>
+</html>

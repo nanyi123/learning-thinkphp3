@@ -1,0 +1,163 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script type="text/javascript" src="/test1/Public/JS/echarts.js"></script>
+    <script type="text/javascript" src="/test1/Public/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="/test1/Public/JS/anhui.js"></script>
+    <link rel="stylesheet" type="text/css" href="/test1/Public/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/test1/Public/easyui.css" />
+</head>
+<body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=edfVV3fkGWSqQ0boeeMcNNunaQfBncvh"></script>
+<div id="echart"style="width:800px;height:500px;position: relative;left: 20%"></div>
+
+<div id="map" style="width:800px;height: 500px "></div>
+<script>
+
+    var mychart = echarts.init(document.getElementById('echart'));
+     data();
+     map();
+     function data() {
+         $.ajax({
+            url:'/test1/index.php/home/Echarts/pie',
+            type:'post',
+             dataType:'json',
+             success:function (data) {
+                 var length = data.length;
+                 var proList = new Array(length);
+                for(var i=0;i<length;i++){
+                    proList[i]=data[i].name;
+                }
+
+                 line(data,proList);
+             }
+         })
+     }
+    function line(data,name) {
+        mychart.title = '环形图';
+
+        option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data:name,
+            },
+            series: [
+                {
+                    name:'访问来源',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:
+                        data
+
+                }
+            ]
+        };
+
+        mychart.setOption(option, 'true');
+    }
+/*********************************************************************************************************************/
+    function map() {
+        // 百度地图API功能
+        var map = new BMap.Map("map");    // 创建Map实例
+        //map.centerAndZoom(new BMap.Point(116.404, 39.915), 18);  // 初始化地图,设置中心点坐标和地图级别
+        //添加地图类型控件
+        /* map.addControl(new BMap.MapTypeControl({
+             mapTypes:[
+                 BMAP_NORMAL_MAP,
+                 BMAP_HYBRID_MAP
+             ]}));*/
+        map.addControl(new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP,BMAP_SATELLITE_MAP ],anchor: BMAP_ANCHOR_TOP_RIGHT}));
+        var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+        map.addControl(top_left_control);
+        var navigationControl = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_LEFT,type: BMAP_NAVIGATION_CONTROL_LARGE,enableGeolocation: true
+        });
+        map.addControl(navigationControl);
+        var overViewOpen = new BMap.OverviewMapControl({isOpen:true, anchor: BMAP_ANCHOR_BOTTOM_RIGHT});
+        map.addControl(overViewOpen);
+        map.addControl(overViewOpen);
+        map.setCurrentCity("合肥");          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        /*添加点*/
+
+
+        var point = new BMap.Point(117.2035966744,31.7585552763);
+        map.centerAndZoom(point, 18);
+        var marker = new BMap.Marker(point);  // 创建标注
+        map.addOverlay(marker);
+
+        var navigationControl = new BMap.NavigationControl({
+            // 靠左上角位置
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            // LARGE类型
+            type: BMAP_NAVIGATION_CONTROL_LARGE,
+            // 启用显示定位
+            enableGeolocation: true
+        });
+        map.addControl(navigationControl);
+        // 添加定位控件
+        var geolocationControl = new BMap.GeolocationControl();
+        geolocationControl.addEventListener("locationSuccess", function(e){
+            // 定位成功事件
+            var address = '';
+            address += e.addressComponent.province;
+            address += e.addressComponent.city;
+            address += e.addressComponent.district;
+            address += e.addressComponent.street;
+            address += e.addressComponent.streetNumber;
+            alert("当前定位地址为：" + address);
+        });
+        geolocationControl.addEventListener("locationError",function(e){
+            // 定位失败事件
+            alert(e.message);
+        });
+        map.addControl(geolocationControl);
+
+
+        
+        map.enableInertialDragging();
+
+        map.enableContinuousZoom();
+
+        var size = new BMap.Size(10, 20);
+        map.addControl(new BMap.CityListControl({
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            offset: size,
+            // 切换城市之间事件
+            // onChangeBefore: function(){
+            //    alert('before');
+            // },
+            // 切换城市之后事件
+            // onChangeAfter:function(){
+            //   alert('after');
+            // }
+        }));
+    }
+</script>
+</body>
+</html>

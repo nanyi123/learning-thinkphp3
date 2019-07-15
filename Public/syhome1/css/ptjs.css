@@ -1,0 +1,54 @@
+.wrap {
+    padding: 15px;
+}
+
+.wrap .glyphicon-send,
+.wrap .glyphicon-tree-deciduous,
+.wrap .glyphicon-random,
+.wrap .glyphicon-globe {
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+    color: #689b05;
+}
+
+.wrap h2 {
+    text-align: center;
+    padding-top: 0.8em;
+}
+
+.wrap h2 a {
+    color: #2a2a2a;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.wrap p {
+    font-size: 14px;
+    color: #A1A1A1;
+    /*    text-indent: 2em;*/
+    
+    padding: 0.8em 4em;
+}
+
+.wrap .moreWrap {
+    text-align: center;
+}
+
+.wrap .readMore {
+    ;
+    text-align: center;
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 12px;
+    color: #2a2a2a;
+    margin: 10px 0;
+/*    float: right;*/
+    -moz-border-top: 1px solid #689B05;
+    -webkit-border-top: 1px solid #689B05;
+    border-top: 1px solid #689B05;
+}
+
+.wrap .readMore span {
+    padding-left: 10px;
+}

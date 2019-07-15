@@ -1,0 +1,18 @@
+
+.map img{
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+}
+.address{
+    padding-top: 10px;
+}
+.address span{
+    font-weight: bold;
+}
+.address a{
+    color: #02a315;
+}
+.address a:hover{
+    text-decoration: none;
+    color: #d0eb03
+}

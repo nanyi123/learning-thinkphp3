@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax例子解析</title>
+    <js href="__PUBLIC__/easyui/jquery.min.js" />
+    <css href="__PUBLIC__/css/bootstrap.min.css"/>
+    <css href="__PUBLIC__/easyui.css"/>
+    <js href="__PUBLIC__/easyui/jquery.easyui.min.js" />
+</head>
+<style>
+    body{
+        background: #e2e2e2;
+    }
+</style>
+<body>
+<div style="font-size: 20px;color: red"> 一个简单的ajax抛送的例子，下面直接调用的是bootstrap的表单框架，后续你们也可以直接调用（注意的是需要引用相应的js,css文件）这些文件可以网上直接下载。
+                值得注意的是在后续的学习过程中你们会遇到两种抛送后台的方式：1、form表单抛送（优点在于：一次性可以抛送很多参数到后台，不需要组键值对。缺点：在于后台
+                调试的时候浏览器不容易看到对，很麻烦到底有没有抛送过去）2、ajax抛送（用的最多）。后面我们还会用到easyui框架，其他bootstrap框架等。
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="padding-top: 50px">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="add()">确认提交</a>
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="remove()">删除</a>
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="change()">修改</a>
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="login()">登录</a>
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="DP()">显示</a>
+
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="sign()">注册</a>
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="rm()">删号</a>
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="alter()">改密码</a>
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="log()">登录</a>
+                    <a href="#" class="btn btn-primary btn-lg submit" onclick="look()">查看密码</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<div id="jg" style="width: 100%;height: 50px;color: red;text-align: center"></div>
+<div id="em" style="width: 100%;height: 50px;color: red;text-align: center"></div>
+<div id="pw" style="width: 100%;height: 50px;color: red;text-align: center"></div>
+</body>
+<script>
+function add() {
+    var Email=$('#inputEmail3').val();
+    var Password=$('#inputPassword3').val();
+    var data={
+        'Email':Email,
+        'Password':Password
+    };
+
+    $.ajax({
+        url: '__ROOT__/index.php/home/index/add',
+        data:data,
+        type:'post',
+        datatype:'json',
+        success:function (data) {
+            if (data=='1'){
+                alert("添加成功");
+                var not="卡普空天下第一";
+                $('#jg').append(not);
+            }else if(data='111'){
+                alert("呸!垃圾卡普空");
+                $.messager.show({
+                    title:'炒冷饭',
+                    msg:'一个游戏二十多个版本，呸！',
+                    timeout:4000,
+                    showType:'slide'
+
+                })
+            }
+        }
+    } )
+
+}
+function remove() {
+    var Email=$('#inputEmail3').val();
+    var Password=$('#inputPassword3').val();
+    var data={
+        'Email':Email,
+        'Password':Password
+    };
+    $.ajax({
+        url:'__ROOT__/index.php/home/index/delete',
+        data:data,
+        type:'post',
+        datatype:'json',
+        success:function (data) {
+            if(data=='120'){
+                alert("删除成功");
+            }
+
+        }
+    })
+
+}
+    function change() {
+    var Email=$('#inputEmail3').val();
+    var Password=$('#inputPassword3').val();
+    var data={
+        'Email':Email,
+        'Password':Password
+    };
+    $.ajax({
+        url:'__ROOT__/index.php/home/index/update',
+        data:data,
+        type:'post',
+        datatype:'json',
+        success:function (data) {
+        if(data==Password)       {
+            alert("update success!");
+        }
+        }
+    })
+    }
+    function login() {
+        var Email=$('#inputEmail3').val();
+        var Password=$('#inputPassword3').val();
+        if(Email==''){
+            alert("呸！");
+            return false;
+            if(Password==''){
+                alert("密码呢");
+                return false;
+            }
+        }
+        var data={
+            'Email':Email,
+            'Password':Password
+        };
+        $.ajax({
+            url:'__ROOT__/index.php/home/index',
+            data:data,
+            type:'post',
+            datatype:'json',
+            success:function (data) {
+                if(data='119'){
+                    alert("开炮！！！");
+                }
+
+            }
+        })
+
+    }
+    function DP() {
+    var Email=$('#inputEmail3').val();
+        console.log(Email);
+        if(Email=='dp'){
+            var data={'Email':Email};
+            $.ajax({
+                url:'__ROOT__/index.php/home/index/dp',
+                data:data,
+                type:'post',
+                datatype:'json',
+                success:function (data) {
+                var zxc=data;
+                $('#jg').append(zxc);
+                }
+
+            })
+        }else
+        {
+            alert("我觉得不行");
+            return false;
+        }
+
+    }
+
+    function sign() {
+    var Email=$('#inputEmail3').val();
+    var Password=$('#inputPassword3').val();
+    var data={
+        'Email':Email,
+        'Password':Password
+    };
+    $.ajax({
+        url:'__ROOT__/index.php/home/index/si',
+        data:data,
+        type:'post',
+        datatype:'json',
+        success:function (data) {
+            if(data=="si"){
+                alert("成功");
+                var q="测试成功";
+                $('#jg').append(q);
+            }else if (data=="重复"){
+                alert("账号重复");
+            }
+            else {
+                alert("失败");
+            }
+        }
+    })
+    }
+    function rm() {
+    var Email=$('#inputEmail3').val();
+    var Password=$('#inputPassword3').val();
+    var data={'Email':Email,
+        'Password':Password
+    };
+    $.ajax({
+        url:'__ROOT__/index.php/home/index/rm',
+        data:data,
+        type:'post',
+        datatype:'json',
+        success:function (data) {
+            if (data=="rm-rf"){
+                alert("success");
+                var w="delete success";
+                $('#jg').append(w);
+            }else{
+                alert("???????????????????????????????");
+            }
+        }
+    })
+    }
+   function alter() {
+    var Email=$('#inputEmail3').val();
+    var Password=$('#inputPassword3').val();
+    var data={
+        'Email':Email,
+        'Password':Password
+    };
+    if(Email==''&&Password==''){
+        alert("???????????????????????????");
+        return false;
+    }
+
+       $.ajax({
+           url:'__ROOT__/index.php/home/index/at',
+           data:data,
+           type:'post',
+           datatype:'json',
+           success:function (data) {
+               if (data=="Modificación") {
+                   alert("conéxito");
+                   var e="Modificar conéxito";
+                   $('#jg').append(e);
+               }else {
+                   alert("No lo creo.");
+               }
+           }
+       })
+   }
+   function log() {
+       var Email=$('#inputEmail3').val();
+       var Password=$('#inputPassword3').val();
+       var data={
+           'Email':Email,
+           'Password':Password
+       };
+       $.ajax({
+           url:'__ROOT__/index.php/home/index/log',
+           data:data,
+           type:'post',
+           datatype:'json',
+           success:function (data) {
+               if (data="成功") {
+                   alert("テストに成功しました");
+                   var r="ログイン成功";
+                   $('#jg').append(r);
+               }else if(data=="直せない"){
+                   alert("失敗");
+               }
+           }
+       })
+   }
+   function look() {
+    var Email=$('#inputEmail3').val();
+    var data={'Email':Email};
+    $.ajax({
+        url:'__ROOT__/index.php/home/index/look',
+        data:data,
+        type:'post',
+        datatype:'json',
+        success:function(pw){
+           var w ="密码是："+pw[1];
+           document.getElementById('pw').innerHTML=w;
+        }
+    })
+
+   }
+</script>
+</html>

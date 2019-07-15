@@ -1,0 +1,147 @@
+body{
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.wrapper{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+}
+.contact_text{
+    margin: 0 50px 20px 20px;;
+}
+.little_es{
+     color:#ccc;
+    font-size:13px;
+    padding-left:5px;
+}
+.little_title {
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+    color:#646464;
+    padding-bottom: 10px;
+}
+.line
+{
+    margin-top: 5px;
+}
+.line_left{
+    border-top:4px solid #02a315;
+    -moz-border-top:4px solid #02a315;
+    -ms-border-top:4px solid #02a315;
+    -o-border-top:4px solid #02a315;
+    -webkit-border-top:4px solid #02a315;
+}
+.line_right{
+    border-top:4px solid #e8e8e8;
+    -o-border-top:4px solid #e8e8e8;
+    -ms-border-top:4px solid #e8e8e8;
+    -moz-border-top:4px solid #e8e8e8;
+    -webkit-border-top:4px solid #e8e8e8;
+}
+/*二级页面样式*/
+.second_list{
+  font-family:"Microsoft Yahei";
+  font-size:14px;
+  display:inline-block;
+  width:100%;
+  padding-top:10px;
+  padding-bottom:20px;
+}
+.fr{
+    float:right;
+}
+.span_right{
+    padding-right:10px;
+}
+.bottom_page{
+    text-align:center;
+    padding-top:20px; 
+}
+
+/* 可追溯产品三级页面样式 */
+
+
+#companyDetail  ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    -o-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    font-size: 12px;
+}
+
+.list_title {
+    border-bottom: 2px solid #ccc;
+    -moz-border-bottom: 2px solid #ccc;
+    -webkit-border-bottom: 2px solid #ccc;
+    cursor: default;
+    background-color: #F9F9F9;
+    overflow: auto;
+}
+.list_title li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.list_title .listNum ,
+#company_list .listNum{
+    width: 10%;
+}
+
+#company_list .text-list {
+    position: relative;
+    z-index: 1;
+    padding: 5px 0;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: #e0e0e0 dashed 1px;
+    border-left: #fff solid 1px;
+    border-right: #fff solid 1px;
+    clear: both;
+    cursor: default;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: rgba(230, 230, 230, 0);
+    width:100%;
+}
+
+#company_list .text-list:hover {
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+#company_list .text-list .listSpan {
+    width: 25%;
+    display: inline-block;
+    font-size: 14px;
+    color: #6f6f6f;
+    padding: 8px 0;
+    float:left;
+    line-height:60px;
+}
+#company_list .listNum {
+    width: 10%!important;
+}
+.listSpan img {
+    width:50px;
+    height:50px;;
+}
+#company_list li:nth-child(even) {
+    background-color: #fafafa;
+}
+.myTitle {
+    color: #ff7644!important;
+}

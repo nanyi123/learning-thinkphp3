@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 兼容性问题 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <!-- 缓存问题 -->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 网站名/描述/keywords -->
+    <title>安徽省农产品质量安全监管平台</title>
+    <!-- CSS -->
+    <link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" href="css/sy-dl.css" rel="stylesheet">
+    <link type="text/css" href="css/tptx.css" rel="stylesheet">
+    <link type="text/css" href="css/pl.css" rel="stylesheet">
+<!--    <link type="text/css" href="css/tphg.css" rel="stylesheet">-->
+    <!-- <css href="../easyUI/themes/default/easyui.css"/>
+	<css href="../easyUI/themes/icon.css"/>
+	<css href="../css/login.css"/> -->
+
+    <!-- <js href="../../easyUI/jquery.min.js"/>
+   <js href="../../easyUI/jquery.easyui.min.js"/>
+   <js href="../../easyUI/locale/easyui-lang-zh_CN.js"/> -->
+
+    <script type="text/javascript" src="../easyUI/jquery.min.js"></script>
+    <script src="../easyUI/jquery.easyui.min.js" /></script>
+    <script src="../easyUI/locale/easyui-lang-zh_CN.js" /></script>
+    <script type="text/javascript" src="../sy/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../sy/js/pl.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <img src="dl-img/dtwz.png" class=" img-responsive img" alt="Responsive image" />
+            </div>
+        </div>
+        </br>
+        </br>
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <input type="hidden" id="checkStatus" value="{$userInfo.checkbox}" />
+                <center>
+                    <form id="fm" method="post">
+                        <input type="hidden" name="id"></input>
+                        <input type="hidden" id="role" name="role"></input>
+                        <span><b>用&nbsp;&nbsp;户:</b></span>&nbsp;&nbsp;&nbsp;
+                        <input class="user" placeholder="账户" type="text" name="user"></input>
+                        <span><b>密&nbsp;&nbsp;码:</b></span>
+                        <input class="pw" placeholder="密码" type="text" name="password" />&nbsp;&nbsp;&nbsp;
+                        <a href="#" onclick="login()"><b>登&nbsp;&nbsp;&nbsp;录</b></a>
+                        <a href="#" onclick="register()"><b>注&nbsp;&nbsp;&nbsp;册</b></a>
+<!--                        <input type="button" value="注册" class="button_style" onclick="register()" />-->
+                        <!--  <a href="#" iconCls="icon-ok" onclick="login()">登&nbsp;&nbsp;&nbsp;录</a> -->
+                    </form>
+                </center>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="user_callback">
+                    <div class="user_pic" id="user_pic">
+<!--                        <span class="prev"></span> <span class="next"></span>-->
+                        <ul id="user_call">
+                            <li class=" user_pic1">
+                                <a href="http://eco.ahau.edu.cn/ncpsy/?role=p_01"> <img src="dl-img/cy.png" alt="1" />
+                                </a>
+                            </li>
+                            <li class=" user_pic2">
+
+                                <a href="http://eco.ahau.edu.cn/ncpsy/?role=p_02"> <img src="dl-img/qc.png" alt="1" />
+                                </a>
+
+                            </li>
+                            <li class="user_pic3">
+
+                                <a href="http://eco.ahau.edu.cn/ncpsy/?role=p_03"> <img src="dl-img/sg.png" alt="1" />
+                                </a>
+
+                            </li>
+                            <li class="user_pic4">
+
+                                <a href="http://eco.ahau.edu.cn/ncpsy/?role=p_04"> <img src="dl-img/xq.png" alt="1" />
+                                </a>
+
+                            </li>
+                            <li class=" user_pic5">
+
+                                <a href="http://eco.ahau.edu.cn/ncpsy/?role=p_05"> <img src="dl-img/sc.png" alt="1" />
+                                </a>
+
+                            </li>
+                            <li class=" user_pic6">
+
+                                <a href="http://eco.ahau.edu.cn/ncpsy/?role=p_06"> <img src="dl-img/yc.png" alt="1" />
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container1">
+        </div>
+        <script type="text/javascript" src="../sy/js/pl.js"></script>
+    </div>
+
+
+
+    <!--图片特效 -->
+    <script type="text/javascript">
+        function arcSlip() {
+            var oPic = document.getElementById('user_pic');
+            var oPrev = getByClass(oPic, 'prev')[0];
+            var oNext = getByClass(oPic, 'next')[0];
+            var aLi = oPic.getElementsByTagName('li');
+            var arr = [];
+
+            for (var i = 0; i < aLi.length; i++) {
+                var oImg = aLi[i].getElementsByTagName('img')[0];
+
+                arr.push([parseInt(getStyle(aLi[i], 'left')), parseInt(getStyle(aLi[i], 'top')),
+             getStyle(aLi[i], 'zIndex'), oImg.width, parseFloat(getStyle(aLi[i], 'opacity') * 100)]);
+            }
+
+
+            oPrev.onclick = function moveTP() {
+                arr.push(arr[0]);
+                arr.shift();
+                for (var i = 0; i < aLi.length; i++) {
+                    var oImg = aLi[i].getElementsByTagName('img')[0];
+
+                    aLi[i].style.zIndex = arr[i][2];
+                    startMove(aLi[i], {
+                        left: arr[i][0],
+                        top: arr[i][1],
+                        opacity: arr[i][4]
+                    });
+                    startMove(oImg, {
+                        width: arr[i][3]
+                    });
+                }
+
+            }
+
+            oNext.onclick = function moveTN() {
+                arr.unshift(arr[arr.length - 1]);
+                arr.pop();
+                for (var i = 0; i < aLi.length; i++) {
+                    var oImg = aLi[i].getElementsByTagName('img')[0];
+
+                    aLi[i].style.zIndex = arr[i][2];
+                    startMove(aLi[i], {
+                        left: arr[i][0],
+                        top: arr[i][1],
+                        opacity: arr[i][4]
+                    });
+                    startMove(oImg, {
+                        width: arr[i][3]
+                    });
+                }
+            }
+            var moveTime = setInterval(function () {
+
+                oNext.click();
+
+            }, 3000);
+            $('#user_pic').hover(function () {;;
+                clearInterval(moveTime);
+            }, function () {
+                moveTime = setInterval(function () {
+                    oNext.click();
+                }, 3000);
+            });
+
+            function getStyle(obj, name) {
+                if (obj.currentStyle) {
+                    return obj.currentStyle[name];
+                } else {
+                    return getComputedStyle(obj, false)[name];
+                }
+            }
+        }
+
+        function getByClass(oParent, sClass) {
+            var aResult = [];
+            var aEle = oParent.getElementsByTagName('*');
+
+            for (var i = 0; i < aEle.length; i++) {
+                if (aEle[i].className == sClass) {
+                    aResult.push(aEle[i]);
+                }
+            }
+            return aResult;
+        }
+
+        function getStyle(obj, name) {
+            if (obj.currentStyle) {
+                return obj.currentStyle[name];
+            } else {
+                return getComputedStyle(obj, false)[name];
+            }
+        }
+
+        function startMove(obj, json, fnEnd) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function () {
+                var bStop = true;
+                for (var attr in json) {
+                    var cur = 0;
+
+                    if (attr == 'opacity') {
+                        cur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
+                    } else {
+                        cur = parseInt(getStyle(obj, attr));
+                    }
+
+                    var speed = (json[attr] - cur) / 12;
+                    speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+
+                    if (cur != json[attr]) bStop = false;
+
+                    if (attr == 'opacity') {
+                        obj.style.filter = 'alpha(opacity:' + (cur + speed) + ')';
+                        obj.style.opacity = (cur + speed) / 100;
+                    } else {
+                        obj.style[attr] = cur + speed + 'px';
+                    }
+                }
+
+                if (bStop) {
+                    clearInterval(obj.timer);
+                    if (fnEnd) fnEnd();
+                }
+
+            }, 30)
+
+
+        }
+        arcSlip();
+    </script>
+
+    <!--登录权限 -->
+    <script type="text/javascript">
+        function login() {
+            //alert();
+            $('#fm').form('submit', {
+                url: ' ../../../ncpsy/index.php/Index/login/userType/质量监管部门',
+                onSubmit: function () {
+                    if ($('#fm [name="user"]').val() == "") {
+                        alert("用户名不能为空！");
+                        return false;
+                    }
+                    if ($('#fm [name="password"]').val() == "") {
+                        alert("用密码不能为空！");
+                        return false;
+                    }
+                },
+                success: function (myString) {
+                    var data = eval("(" + myString + ")"); //解析json对象，，，，json格式    {"firstName":"Brett"}  
+                    //alert();
+                    if (data.result == "success") {
+                        window.open(" ../../../ncpsy/index.php/Index/host");
+                    } else if (data.result == "noregister") {
+                        alert('您的账号未通过审核');
+                        return false;
+                    } else {
+                        alert('用户名或密码错误！');
+                        return false;
+                    }
+                }
+            });
+
+        }
+        
+        
+         function register() {
+    	window.location.href="../../../ncpsy/index.php/Index/registerPage";
+    }
+        
+        
+        
+        
+
+        //enter触发login事件
+        document.onkeydown = function (event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if (e && e.keyCode == 13) { // enter 键
+                login(); //要做的事情
+            }
+        };
+        
+         
+    </script>
+
+
+    <!--底部版权-->
+    <div class="row">
+        <div class="col-md-12 footer">
+            <p>版权所有：安徽农业大学</p>
+            <p>地址：安徽省合肥市长江西路130号 邮编：230036</p>
+            <p>技术支持： <a href="http://aie.ahau.edu.cn/home/" target="_blank" style="text-decoration:none;color:#d0eb03;">安徽农业大学农业信息工程实验室</a>
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+p {
+    margin: 0
+}
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 28px;
+    margin-bottom: 10px;
+        color:#fff;
+}
+.top{display: flex;
+    flex-flow:  row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.one {
+    height: 115px;
+    border: 1px solid #00FFFC;
+    position: relative;
+    margin: 0px 15px;
+    padding-top: 5px;
+}
+
+.one .col-md-6 {
+    padding-left: 0
+}
+
+.city {
+    font-size: 16px;
+    color: #fff;
+}
+
+.num {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
+.mainline {
+    width: 100%;
+    float: left;
+    height: 10px;
+    background: rgba(60, 218, 250, 0.3);
+}
+
+.per {
+    color: aqua;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.nums {
+    color: aqua;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
+/*茶叶*/
+
+#chaye .line {
+    width: 27.5%;
+    float: left;
+    height: 10px;
+    background: #3CDAFA;
+    margin-top: -10px;
+}
+
+#chaye .line2 {
+    width: 27.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#chaye .line3 {
+    width: 22.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#chaye .line4 {
+    width: 7.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#chaye .line5 {
+    width: 5%;
+    float: left;
+    height: 10px;
+    background: aqua;
+    margin-top: -10px;
+}
+
+/*蔬菜*/
+
+#shucai .line {
+    width: 18.8%;
+    float: left;
+    height: 10px;
+    background: #3CDAFA;
+    margin-top: -10px;
+}
+
+#shucai .line2 {
+    width: 13.2%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shucai .line3 {
+    width: 9.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shucai .line4 {
+    width: 9.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shucai .line5 {
+    width:5.6%;
+    float: left;
+    height: 10px;
+    background: aqua;
+    margin-top: -10px;
+}
+
+
+
+/*水果*/
+
+#shuiguo .line {
+    width: 55.1%;
+    float: left;
+    height: 10px;
+    background: #3CDAFA;
+    margin-top: -10px;
+}
+
+#shuiguo .line2 {
+    width: 31.0%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shuiguo .line3 {
+    width: 22.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shuiguo .line4 {
+    width: 3.4%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shuiguo .line5 {
+    width:3.4%;
+    float: left;
+    height: 10px;
+    background: aqua;
+    margin-top: -10px;
+}
+
+
+/*畜禽*/
+
+#xuqin .line {
+    width: 80%;
+    float: left;
+    height: 10px;
+    background: #3CDAFA;
+    margin-top: -10px;
+}
+
+#xuqin .line2 {
+    width: 20%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#xuqin .line3 {
+    width: 22.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#xuqin .line4 {
+    width: 7.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#xuqin .line5 {
+    width: 5%;
+    float: left;
+    height: 10px;
+    background: aqua;
+    margin-top: -10px;
+}
+
+
+
+/*水产*/
+
+#shuichan .line {
+    width: 54.5%;
+    float: left;
+    height: 10px;
+    background: #3CDAFA;
+    margin-top: -10px;
+}
+
+#shuichan .line2 {
+    width: 18.1%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shuichan .line3 {
+    width: 9%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shuichan .line4 {
+    width: 9%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#shuichan .line5 {
+    width: 9%;
+    float: left;
+    height: 10px;
+    background: aqua;
+    margin-top: -10px;
+}
+
+
+/*药材*/
+
+#yaocai .line {
+    width: 100%;
+    float: left;
+    height: 10px;
+    background: #3CDAFA;
+    margin-top: -10px;
+}
+
+#yaocai .line2 {
+    width: 27.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#yaocai .line3 {
+    width: 22.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#yaocai .line4 {
+    width: 7.5%;
+    float: left;
+    height: 10px;
+    background: #F8D769;
+    margin-top: -10px;
+}
+
+#yaocai .line5 {
+    width: 5%;
+    float: left;
+    height: 10px;
+    background: aqua;
+    margin-top: -10px;
+}

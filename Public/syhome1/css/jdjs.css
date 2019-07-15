@@ -1,0 +1,21 @@
+.title{
+    color: #575757;
+    font-size: 18px;
+    color: #02a315;
+}
+.clps span,.cljz span{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+    display: inline-block;
+    border-left:5px solid #02a315;
+    -moz-border-left:5px solid #02a315;
+    -ms-border-left:5px solid #02a315;
+    -o-border-left:5px solid #02a315;
+    -webkit-border-left:5px solid #02a315;
+}
+.content p,.clps p,.cljz p{
+    text-indent: 2em;
+    padding-top: 20px;
+}

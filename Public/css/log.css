@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table tr {
+    margin-top: 30px;
+}
+
+#p {
+    width: 800px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -moz-border: 1px solid rgba(255, 255, 255, 0.5);
+    -ms-border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+}
+.p1{
+    width: 830px;
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -moz-border: 1px solid rgba(255, 255, 255, 0.5);
+    -ms-border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+    padding-top: 15px
+
+}
+
+.login_txt {
+    text-align: center;
+    font-size: 35px;
+    color: #76EE00;
+    text-shadow: 2px 2px 2px #555555;
+    -moz-text-shadow: 2px 2px 2px #555555;
+    -ms-text-shadow: 2px 2px 2px #555555;
+    -webkit-text-shadow: 2px 2px 2px #555555;
+    cursor: default;
+}
+
+.login_txt td {
+    width: 340px;
+}
+
+.user,
+.pw {
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid rgba(0, 100, 255, 0.3);
+    -ms-border: 1px solid rgba(0, 100, 255, 0.3);
+    -moz-border: 1px solid rgba(0, 100, 255, 0.3);
+    -webkit-border: 1px solid rgba(0, 100, 255, 0.3);
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    cursor: default;
+}
+
+.footer a {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.footer:hover a
+{
+    color: #3ea22d;
+}
+.login_btn a {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background-color: #3ea22d;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 2px 2px 2px #555555;
+    -moz-text-shadow: 2px 2px 2px #555555;
+    -ms-text-shadow: 2px 2px 2px #555555;
+    -webkit-text-shadow: 2px 2px 2px #555555;
+    border: 1px solid rgba(0, 30, 96, 0.12);
+    -moz-border: 1px solid rgba(0, 30, 96, 0.12);
+    -ms-border: 1px solid rgba(0, 30, 96, 0.12);
+    -webkit-border: 1px solid rgba(0, 30, 96, 0.12);
+    transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.login_btn a:hover,
+.login_btn a:focus {
+    background-color: #5cbd4c;
+}
+
+
+.button_style{
+    background-color:rgba(255, 255, 255, 0.9);
+    width:80px;
+    color:black;
+    font-size:13px;
+    font-weight: 500;
+    text-shadow:1px 1px 1px #FFFFFF;
+    border:1px rgba(255, 255, 255, 0.70) solid;
+    cursor:pointer;
+}
+
+
+.button_style:hover{
+    background-color: white;
+}
+
+.return{
+    text-align: right;
+}
+
+.return input{
+    border-radius:6px;
+}
+
+.line{
+    width: 100%;
+    margin-top:5px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.6);
+}
+.log{
+
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 9px;
+    color: #0154a0;
+}
+
+.d{
+    width:65px;
+}
+
+
+
+.search a {
+    display: inline-block;
+    width: 75%;
+    height: 45px;
+    background-color: #3ea22d;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 2px 2px 2px #555555;
+    -moz-text-shadow: 2px 2px 2px #555555;
+    -ms-text-shadow: 2px 2px 2px #555555;
+    -webkit-text-shadow: 2px 2px 2px #555555;
+    border: 1px solid rgba(0, 30, 96, 0.12);
+    -moz-border: 1px solid rgba(0, 30, 96, 0.12);
+    -ms-border: 1px solid rgba(0, 30, 96, 0.12);
+    -webkit-border: 1px solid rgba(0, 30, 96, 0.12);
+    transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.search a:hover,
+.search a:focus {
+    background-color: #5cbd4c;
+}
+
+button{
+
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 9px;
+    color: #0154a0;
+    border:0;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0;
+    outline: 0
+}
+
+
+
+#p div {
+    display: none;
+
+}
+
+.line1{
+    display: inline-block;
+    height: 25px;
+    padding-left: 20px;
+    margin-bottom: -5px;
+    border-right: 1px solid #ccc;
+}
+
+#p .active {
+    color: red;
+}
+
+
+#bh table input{
+    width:350px
+}
+
+#bh table tr{margin-bottom:15px}
+
+ .textbox, .textbox-invalid{
+    height:30px!important;
+}
+
+
+#bh td .textbox{
+    margin-top: 15px
+}
+
+.jcz{
+
+    padding-top: 15px
+}
+
+.sz {
+    width:250px !important;
+
+
+}
+
+#form .textbox {
+    border: none;
+    width:230px !important;
+}
+
+#form td {
+    height: 25px;
+}
+
+
+#dlg-buttons {
+
+    justify-content: space-around;
+    background: #87cefa;
+    border-color: rgba(0, 0, 0, 0)
+}
+
+
+
+
+
+.l-btn-text {
+    margin: 2px 8px 2px 8px;
+}
+
+
+.dialog-button .l-btn {
+    margin-left: 0;
+}
+
+#dlg-buttons .l-btn {
+    color: #444;
+    background: #87cefa;
+    background-repeat: repeat-x;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#eeeeee, GradientType=0);
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#dlg-buttons .l-btn:hover{
+    background:#6cc0f5;
+}

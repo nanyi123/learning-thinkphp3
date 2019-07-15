@@ -1,0 +1,579 @@
+[ 2019-06-27T09:30:12+08:00 ] ::1 /syspxcl/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001586s ]
+
+[ 2019-06-27T17:54:00+08:00 ] ::1 /syspxcl/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2019-06-27T19:14:30+08:00 ] ::1 /syspxcl/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002242s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001893s ]
+
+[ 2019-06-27T19:14:35+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:14:37+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:14:37+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:14:37+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001584s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:14:37+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002321s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:14:38+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:14:38+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:14:44+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003007s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:14:44+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002243s ]
+ERR: 参数错误或者未定义:De
+
+[ 2019-06-27T19:19:53+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002575s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0055s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:19:54+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0063s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:19:54+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0049s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:19:54+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0062s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:19:54+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0049s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:19:54+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001682s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0055s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:19:54+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006240s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0085s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:20:11+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0056s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:20:11+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001877s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0053s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:20:11+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0049s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:20:12+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:20:12+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:20:12+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant data - assumed 'data' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0054s ]
+NOTIC: [8] Use of undefined constant da - assumed 'da' C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 28 行.
+
+[ 2019-06-27T19:21:02+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002197s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0045s ]
+
+[ 2019-06-27T19:21:04+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0059s ]
+
+[ 2019-06-27T19:27:13+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003259s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0045s ]
+
+[ 2019-06-27T19:27:13+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001742s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0063s ]
+
+[ 2019-06-27T19:27:13+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0050s ]
+
+[ 2019-06-27T19:27:13+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002158s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0064s ]
+
+[ 2019-06-27T19:27:14+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002772s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0047s ]
+
+[ 2019-06-27T19:27:14+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001589s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0054s ]
+
+[ 2019-06-27T19:30:51+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2019-06-27T19:30:52+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2019-06-27T19:30:52+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002367s ]
+
+[ 2019-06-27T19:30:52+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001701s ]
+
+[ 2019-06-27T19:30:52+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001688s ]
+
+[ 2019-06-27T19:31:39+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002596s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002939s ]
+
+[ 2019-06-27T19:31:39+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001952s ]
+
+[ 2019-06-27T19:31:39+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001876s ]
+
+[ 2019-06-27T19:31:39+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001942s ]
+
+[ 2019-06-27T19:31:40+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001662s ]
+
+[ 2019-06-27T19:35:45+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001934s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002144s ]
+
+[ 2019-06-27T19:35:49+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+NOTIC: [8] Undefined index: Email C:\xampp\htdocs\syspxcl\Application\Home\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002333s ]
+
+[ 2019-06-27T19:39:40+08:00 ] ::1 /syspxcl/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2019-06-27T19:39:41+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003286s ]
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0079s ]
+SQL: DELETE FROM `t_ry` WHERE `Email` = '' [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002514s ]
+
+[ 2019-06-27T19:41:33+08:00 ] ::1 /syspxcl/index.php/home/index/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001585s ]
+SQL: SHOW COLUMNS FROM `t_ry` [ RunTime:0.0076s ]
+SQL: DELETE FROM `t_ry` WHERE `Email` = '123' [ RunTime:0.0052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001868s ]
+

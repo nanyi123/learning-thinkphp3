@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>政策法规</title>
+    <link type="text/css" href="../css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" href="../css/index_style.css" rel="stylesheet">
+    <link type="text/css" href="../css/reset.css" rel="stylesheet">
+    <link type="text/css" href="../css/lxwm.css" rel="stylesheet">
+    <link type="text/css" href="../css/same_style.css" rel="stylesheet">
+    <!-- JS -->
+    <!--[if lte IE 8]>
+    <script src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js">
+    </script><![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- JS兼容问题 -->
+    <!--[if lte IE 8]>
+    <script src=”http://libs.baidu.com/jquery/1.9.1/jquery.min.js”>
+    </script><![endif]-->
+    <!-- BS兼容问题 -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/secondSycg.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/secondZcfg.js"></script>
+    <!--鼠标划过就展开子菜单，免得需要点击才能展开-->
+    <script>
+        $(document).ready(function () {
+            dropdownOpen(); //调用
+        });
+
+        function dropdownOpen() {
+
+            var $dropdownLi = $('li.dropdown');
+
+            $dropdownLi.mouseover(function () {
+                $(this).addClass('open');
+            }).mouseout(function () {
+                $(this).removeClass('open');
+            });
+        }
+    </script>
+</head>
+
+<body class="container">
+    <input type="hidden" id="hidPageNum" />
+    <!--隐藏页数的Input-->
+    <div class="row">
+        <img src="../images/bgImg.png" class=" img-responsive" alt="Responsive image" />
+    </div>
+
+
+     <!--导航栏-->
+    <div class="row">
+        <nav class="navbar navbar-default ">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav col-md-12">
+                    <li><a href="../index.html">首 页 <span class="dividing_line" >&nbsp;</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../secondPages/tzgg.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">通知公告<span class="dividing_line">&nbsp;</span></a>
+                    </li>
+                     <li class="dropdown">
+                        <a href="../secondPages/zcfg.html" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false">政策法规<span class="dividing_line">&nbsp;</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../secondPages/hyzx.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">行业资讯<span class="dividing_line">&nbsp;</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../secondPages/tsncp.html" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false">特色农产品<span class="dividing_line">&nbsp;</span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../secondPages/company.html" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">可追溯企业<span class="dividing_line">&nbsp;</span></a>
+                        <!--<ul class="dropdown-menu">
+                            <li><a href="../secondPages/company.html">可追溯企业</a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">企业红黑榜<span class="dividing_line">&nbsp;</span></a>
+                    </li>
+                    <li class="dropdown"><a href="../thirdPages/lxwm.html">联系我们<span class="dividing_line">&nbsp;</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--主题内容-->
+    <div class="wrapper">
+        <div class="row line">
+            <div class="col-md-3 line_left">
+                &nbsp;
+            </div>
+            <div class="col-md-9 line_right">
+                &nbsp;
+            </div>
+        </div>
+        <div class="contact_text">
+            <p class="little_title">政策法规</p><span class="little_es"></span>
+            <div id="Zcfg" class="list-group" style="padding-top:10px;padding-bottom:20px;">
+
+            </div>
+            <div id="page" style="text-align:center;">
+            </div>
+        </div>
+    </div>
+    <!--    底部版权-->
+    <div class="row">
+        <div class="col-md-12 footer">
+            <p>版权所有：安徽农业大学、安徽省农业生态环保与质量安全产业技术体系</p>
+            <p>地址：安徽省合肥市长江西路130号 邮编：230036</p>
+            <p>技术支持： <a href="http://aie.ahau.edu.cn/home/" target="_blank" style="text-decoration:none;color:#d0eb03;">安徽农业大学农业信息工程实验室</a>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        /*调用通知公告详细页函数*/
+        var myPageNum = GetRequest("");
+        ZcfgAll(1);
+    </script>
+</body>
+
+</html>

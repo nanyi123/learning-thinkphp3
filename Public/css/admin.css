@@ -1,0 +1,94 @@
+  #dlg {
+      width: 800px;
+      height: 480px;
+      padding: 10px 20px;
+      background: #fff;
+  }
+  
+ .panel window{
+     
+     height: 480px;
+ }
+  #dlg .panel-body {
+      height: 450px
+  }
+  
+  #dlg .datagrid-view {
+      min-height: 420px;
+      background: #fff
+  }
+  
+  #dlg .datagrid-header td,
+  #dlg .datagrid-body td,
+  #dlg .datagrid-footer td {
+      border-width: 0 1px 1px 0;
+      border-style: solid;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .window,
+  .window-header {
+      background: #35AA47;
+      padding: 0;
+  }
+  
+  .window-header {
+      height: 30px
+  }
+  
+  .window,
+  .window .window-body {
+      border-color: #35AA47;
+  }
+  
+  .window-shadow {
+      background: #ccc;
+      -moz-box-shadow: 2px 2px 3px rgba(60, 118, 61, 0.42);
+      -webkit-box-shadow: 2px 2px 3px rgba(60, 118, 61, 0.42);
+      box-shadow: 2px 2px 3px rgba(60, 118, 61, 0.42);
+  }
+  
+  #toolbar {
+      border: none;
+  }
+
+  #dlg .datagrid-view1 {
+      border-left: 1px solid #e6e6e6;
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+      
+  }
+  
+  #dlg .datagrid-view2 {
+      border-right: 1px solid #e6e6e6;
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+     
+  }
+  #dlg .datagrid-view1 tr{
+      height: 35px;
+      
+  }
+
+#dlg  .datagrid-cell{
+    font-size: 14px
+}
+
+#dlg  .datagrid-header .datagrid-cell span {
+  font-size: 14px;
+    font-weight: bolder;
+}
+  #dlg .panel-header,
+  #dlg .panel-body {
+      border: none;
+  }
+  
+  .window-header .panel-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #f2f2f2;
+      height: 24px;
+      line-height: 30px;
+      padding-left: 22px;
+  }
